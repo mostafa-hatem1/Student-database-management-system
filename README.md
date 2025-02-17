@@ -1,58 +1,52 @@
-Features:
-1- Add a Student
+# Student Management System
 
-Input student details: ID, name, age, and GPA.
-Prevents duplicate IDs to maintain unique records.
+## Features
 
-2- Display All Students
+1. **Add a Student**
+   - Input student details: ID, name, age, and GPA. Prevents duplicate IDs to maintain unique records.
 
-Lists all students with their respective details (ID, name, age, GPA).
-Organizes records in the order they were added.
+2. **Display All Students**
+   - Lists all students with their respective details (ID, name, age, GPA). Organizes records in the order they were added.
 
-3- Search by ID
+3. **Search by ID**
+   - Find and display the details of a specific student using their unique ID.
 
-Find and display the details of a specific student using their unique ID.
+4. **Update Student Information**
+   - Modify the name, age, or GPA of an existing student by their ID.
 
-4- Update Student Information
+5. **Delete a Student**
+   - Remove a student record from the system using their ID. Handles both head and non-head node deletion seamlessly.
 
-Modify the name, age, or GPA of an existing student by their ID.
+6. **Calculate Average GPA**
+   - Computes and displays the average GPA of all students in the system.
 
-5- Delete a Student
+7. **Find the Student with the Highest GPA**
+   - Identifies and displays the details of the student with the highest GPA.
 
-Remove a student record from the system using their ID.
-Handles both head and non-head node deletion seamlessly.
+8. **Exit the Program**
+   - Safely terminates the program.
 
-6- Calculate Average GPA
+## Implementation Details
 
-Computes and displays the average GPA of all students in the system.
+### Dynamic Memory Allocation
 
-7- Find the Student with the Highest GPA
+- Each student is stored in a dynamically allocated node of a linked list. Ensures scalability for managing multiple student records.
 
-Identifies and displays the details of the student with the highest GPA.
+### Modular Design
 
-8- Exit the Program
+- Functions are written for each feature (e.g., `addStudent`, `updateStudent`, `deleteStudent`), making the code reusable and easy to maintain.
 
-Safely terminates the program.
+### Error Handling
 
-Implementation Details
--Dynamic Memory Allocation
+- Prevents duplicate IDs during student addition.
+- Handles edge cases like empty lists or invalid inputs gracefully.
 
--Each student is stored in a dynamically allocated node of a linked list.
-Ensures scalability for managing multiple student records.
+## How to Use
 
-Modular Design
-
--Functions are written for each feature (e.g., addStudent, updateStudent, deleteStudent), making the code reusable and easy to maintain.
-
-Error Handling
-
--Prevents duplicate IDs during student addition.
--Handles edge cases like empty lists or invalid inputs gracefully.
-
-How to Use
--Compile the program using a C compiler, e.g., gcc student_management.c -o student_management.
--Run the program: ./student_management.
--Use the menu options to perform various operations:
--Enter 1 to add a new student.
--Enter 2 to display all students, and so on.
--Follow prompts to input student details or IDs as required.
+1. Compile the program using a C compiler, e.g., `gcc student_management.c -o student_management`.
+2. Run the program: `./student_management`.
+3. Use the menu options to perform various operations:
+   - Enter `1` to add a new student.
+   - Enter `2` to display all students, and so on.
+4. Follow prompts to input student details or IDs as required.
+```` ▋
